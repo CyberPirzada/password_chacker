@@ -1,0 +1,42 @@
+## ⚙️ Requirements
+
+This project requires Python 3.x and the standard `re` module, which is included in the Python standard library.
+
+The specific requirements are listed in the `requirements.txt` file.
+
+## 🚀 How to Run
+
+1.  **Clone or Download:** Save the `password_chacker.py` file to your local machine.
+2.  **Install Dependencies:** Open your terminal or command prompt, navigate to the project directory, and install the required dependencies (though only the standard library is used, this is good practice):
+
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  **Execute the Script:** Run the file using the Python interpreter:
+
+    ```bash
+    python password_chacker.py
+    ```
+
+4.  **Usage:** The tool will prompt you to enter a password. Type your password and press Enter to see the strength assessment, or type `exit` to quit.
+
+## 📋 Strength Criteria Summary
+
+A password is considered **Strong** if it meets all of the following:
+
+| Criteria | Result if Missing |
+| :--- | :--- |
+| $\ge 8$ Characters | Weak |
+| Contains a Digit | Weak |
+| Contains an Uppercase Letter | Weak |
+| Contains a Lowercase Letter | Weak |
+| Contains a Special Character | Medium |
+
+## 📚 Code Structure
+
+| File | Description |
+| :--- | :--- |
+| `password_chacker.py` | The main script containing the logic for checking password strength and the user interface. |
+| `README.md` | This file. |
+| `requirements.txt` | Lists project dependencies. |
